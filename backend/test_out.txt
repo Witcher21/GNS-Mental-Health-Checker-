@@ -1,0 +1,6 @@
+Starting test
+C:\Users\ASUS\OneDrive - Informatics Institute of Technology\Desktop\GNS-Mental-Health-Checker-\backend\nlp_service.py:167: LangChainDeprecationWarning: The class `LLMChain` was deprecated in LangChain 0.1.17 and will be removed in 1.0. Use RunnableSequence, e.g., `prompt | llm` instead.
+  chain = LLMChain(llm=llm, prompt=prompt, memory=memory, verbose=False)
+C:\Users\ASUS\OneDrive - Informatics Institute of Technology\Desktop\GNS-Mental-Health-Checker-\backend\nlp_service.py:170: LangChainDeprecationWarning: The method `Chain.arun` was deprecated in langchain 0.1.0 and will be removed in 1.0. Use ainvoke instead.
+  result = await chain.arun(input=user_message)
+RES: {'session_id': 'c82fd0a6-947a-4102-af3b-6e7815156691', 'reply': "Hello, and welcome. I'm Aura, your empathetic mental health triage assistant. To help me understand how you're doing, could you start by sharing your name and how you're feeling today?", 'crisis_detected': False, 'extracted_data': {'name': None, 'occupation': None, 'symptoms': [], 'sleep_issues': None, 'appetite_issues': None, 'severity_score': None, 'primary_concern': None, 'sentiment': 'neutral'}, 'phase': 'intake', 'sentiment': 'neutral'}
